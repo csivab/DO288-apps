@@ -4,7 +4,7 @@ set -e
 
 source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
 
-echo "---> Enabling s2i support in httpd24 image"
+echo "---> Enabling s2i support in httpd24 image Siva"
 
 config_s2i
 
@@ -15,8 +15,8 @@ cp -Rf /tmp/src/*.html ./
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
-echo "---> Creating info page"
-echo "Page built on $DATE" >> ./info.html
+echo "---> Creating info page Siva"
+echo "Page built Siva on $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
